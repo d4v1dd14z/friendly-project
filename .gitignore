@@ -1,0 +1,13 @@
+# Dependencias
+node_modules/
+package-lock.json
+
+# Variables de entorno locales (¡Muy importante para proteger tus claves!)
+.dev.vars
+
+# Archivos generados por Cloudflare Wrangler
+.wrangler/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

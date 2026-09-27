@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Energía Diaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla Inicial y Test -->
+        <div id="quiz-container" class="container">
+            <h1>Descubre tu Energía 🌟</h1>
+            <p>Responde estas 3 preguntas y te diré qué vibra transmite tu aura hoy.</p>
+            
+            <form id="quiz-form">
+                <div class="question" id="q1">
+                    <label>1. ¿Cuál es tu clima ideal para una tarde libre?</label>
+                    <select name="clima" required>
+                        <option value="" disabled selected>Elige una opción...</option>
+                        <option value="Lluvia suave con una manta">Lluvia suave y una manta 🌧️</option>
+                        <option value="Día soleado en la naturaleza">Día soleado en la naturaleza ☀️</option>
+                        <option value="Atardecer fresco en la ciudad">Atardecer fresco en la ciudad 🌇</option>
+                        <option value="Cielo nublado y misterioso">Cielo nublado y misterioso ☁️</option>
+                    </select>
+                </div>
+
+                <div class="question" id="q2">
+                    <label>2. Si pudieras transportarte a un lugar ahora mismo, ¿dónde sería?</label>
+                    <select name="lugar" required>
+                        <option value="" disabled selected>Elige una opción...</option>
+                        <option value="Un bosque tranquilo y verde">Un bosque tranquilo y verde 🌲</option>
+                        <option value="Una playa con olas suaves">Una playa con olas suaves 🏖️</option>
+                        <option value="Una cafetería acogedora">Una cafetería acogedora ☕</option>
+                        <option value="Una cabaña en las montañas">Una cabaña en las montañas ⛰️</option>
+                    </select>
+                </div>
+
+                <div class="question" id="q3">
+                    <label>3. ¿Qué palabra te define más en este momento de tu vida?</label>
+                    <input type="text" name="palabra" placeholder="Ej. Paz, Caos, Crecimiento, Amor..." required>
+                </div>
+
+                <button type="submit" id="submit-btn">Revelar mi energía ✨</button>
+            </form>
+        </div>
+
+        <!-- Pantalla de Carga -->
+        <div id="loading-container" class="container hidden">
+            <div class="loader"></div>
+            <h2>Sintonizando con tu aura...</h2>
+            <p>Las estrellas se están alineando para ti.</p>
+        </div>
+
+        <!-- Pantalla Final (La Sorpresa) -->
+        <div id="reveal-container" class="container hidden">
+            <div class="reveal-content">
+                <h1 class="reveal-title">¡Feliz 21 de Septiembre! 🌻</h1>
+                <p id="generated-message">Aquí aparecerá tu mensaje especial...</p>
+                <button id="reset-btn" onclick="location.reload()">Hacerlo de nuevo 💛</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

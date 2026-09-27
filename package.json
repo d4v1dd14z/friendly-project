@@ -1,0 +1,14 @@
+{
+  "name": "flores-amarillas-21-sept",
+  "version": "1.0.0",
+  "description": "Una sorpresa para el 21 de septiembre alojada en Cloudflare Pages",
+  "scripts": {
+    "dev": "wrangler pages dev public"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.2"
+  }
+}

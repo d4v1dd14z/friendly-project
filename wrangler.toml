@@ -1,0 +1,8 @@
+name = "flores-amarillas-21-sept"
+compatibility_date = "2024-03-20"
+pages_build_output_dir = "public"
+
+[vars]
+# Reemplaza esto con tu API Key real en el dashboard de Cloudflare o en el archivo .dev.vars localmente
+# GEMINI_API_KEY = "tu_clave_aqui"
+# UNSPLASH_API_KEY = "tu_clave_aqui"
