@@ -6,7 +6,7 @@ export async function onRequestPost(context) {
         const body = await request.json();
 
         // 1. Mensaje especial fijo y personalizado por ti
-        const message = "Todo lo anterior la verdad no importa porque lo que importa es lo increible que eres, espero que tengas un bonito dia el dia de hoy aunque lo mas probable es que ni pueda estar. Pd: ando efermo :D";
+        const message = "To be honest, none of that other stuff really matters, because what truly counts is that you are such a sweet, kind-hearted person. I really hope we can start a beautiful friendship. Thank you for getting to know me and for welcoming me into your group. And well, since you like surprises and you guys don't celebrate this occasion over there, why not give you a few? They might be virtual, but hey, you get the gesture. Love you! P.S. I’m still going to keep teasing you <3";
 
         // 2. Llamada a Unsplash API para el fondo decorativo (Opcional)
         let imageUrl = null;
